@@ -1,6 +1,7 @@
 "use client"
 
 import { AnimatePresence, motion } from "framer-motion"
+import Image from "next/image"
 import React, { useEffect, useState } from "react"
 
 interface HoverExpandProps {
@@ -48,9 +49,8 @@ export default function HoverExpand({
         {images.slice(0, maxThumbnails).map((imageUrl, i) => (
           <div
             key={`image-container-${i}`}
-            className={`group relative h-80 overflow-hidden rounded-2xl transition-all duration-300  ${
-              selectedIndex === i ? "w-96" : "w-36"
-            }`}
+            className={`group relative h-80 overflow-hidden rounded-2xl transition-all duration-300  ${selectedIndex === i ? "w-96" : "w-36"
+              }`}
             onMouseEnter={() => setSelectedIndex(i)}
             onMouseLeave={() => setSelectedIndex(i)}
             onClick={() => {
@@ -62,10 +62,12 @@ export default function HoverExpand({
               layoutId={`image-${i}`}
               className="absolute inset-0 size-full"
             >
-              <img
+              <Image
                 src={imageUrl}
                 alt={`Image ${i + 1}`}
-                className="size-full object-cover  transition-transform duration-300 "
+                className="size-full object-cover transition-transform duration-300"
+                width={225}
+                height={225}
               />
             </motion.div>
           </div>
@@ -89,10 +91,12 @@ export default function HoverExpand({
                 layoutId={`image-${selectedIndex}`}
                 className="relative size-96"
               >
-                <img
+                <Image
                   src={images[selectedIndex]}
                   alt={`Image ${selectedIndex + 1}`}
                   className="absolute left-1/2 top-1/2  size-full -translate-x-1/2 -translate-y-1/2 object-cover"
+                  width={225}
+                  height={225}
                 />
               </motion.div>
             </div>
