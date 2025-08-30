@@ -12,7 +12,7 @@ const arimo = Arimo({
 
 export const metadata: Metadata = {
   title: "Reality Club",
-  description: "It’s not always about the music, but it’s also about the story behind the music. With that in mind, this is why Reality Club stands out as one of the most sought-after acts in Indonesia.",
+  description: "It&#39;s not always about the music, but it&#39;s also about the story behind the music. With that in mind, this is why Reality Club stands out as one of the most sought-after acts in Indonesia.",
 };
 
 export default function RootLayout({

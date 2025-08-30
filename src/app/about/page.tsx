@@ -16,12 +16,6 @@ export default function About() {
         }
     }, [])
 
-    const scrollToNext = () => {
-        window.scrollBy({
-            top: window.innerHeight,
-            behavior: 'smooth'
-        })
-    }
     return (
         <section className="relative w-full px-8 lg:px-20 xl:px-40 pt-28 pb-10 max-w-screen-2xl flex flex-col items-center">
             {/* Video Background */}

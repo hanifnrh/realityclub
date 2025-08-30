@@ -10,8 +10,8 @@ const Navbar = () => {
 
     const navLinks = [
         { href: "/about", label: "ABOUT" },
-        { href: "#discography", label: "DISCOGRAPHY" },
-        { href: "#schedule", label: "SCHEDULE" },
+        { href: "/#discography", label: "DISCOGRAPHY" },
+        { href: "/#schedule", label: "SCHEDULE" },
         { href: "https://api.whatsapp.com/send/?phone=%2B6287770922416&text&type=phone_number&app_absent=0", label: "BOOKINGS" },
     ];
 
@@ -21,7 +21,7 @@ const Navbar = () => {
                 <div className="flex items-center w-fit gap-20 h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
-                        <a href="/" className="flex items-center">
+                        <Link href="/" className="flex items-center">
                             <div className="relative w-40 h-12">
                                 <Image
                                     src="/assets/realityclublogo.svg"
@@ -30,7 +30,7 @@ const Navbar = () => {
                                     className="object-contain transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(239,68,68,0.6)]"
                                 />
                             </div>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Mobile menu button */}

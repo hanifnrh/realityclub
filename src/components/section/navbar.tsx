@@ -10,8 +10,8 @@ interface NavbarProps {
 
 const navLinks = [
     { href: "/about", label: "ABOUT" },
-    { href: "#discography", label: "DISCOGRAPHY" },
-    { href: "#schedule", label: "SCHEDULE" },
+    { href: "/#discography", label: "DISCOGRAPHY" },
+    { href: "/#schedule", label: "SCHEDULE" },
     { href: "https://api.whatsapp.com/send/?phone=%2B6287770922416&text&type=phone_number&app_absent=0", label: "BOOKINGS" },
 ]
 
