@@ -47,7 +47,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
 
     return (
-        <section className="w-full relative h-screen 2xl:h-[720px] flex items-end justify-center overflow-hidden">
+        <section className="w-full relative h-[500px] sm:h-screen 2xl:h-[720px] flex items-end justify-center overflow-hidden">
             {/* Video Background */}
             <div className="absolute inset-0 w-full h-full">
                 <video
